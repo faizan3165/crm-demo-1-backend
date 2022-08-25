@@ -120,7 +120,7 @@ app.delete('/tickets/:documentId', async (req, res) => {
 	}
 });
 
-app.listen(5000, () => {
+app.listen(5000 || process.env.PORT, () => {
 	console.log('====================================');
 	console.log('Listening on port 5000');
 	console.log('====================================');
